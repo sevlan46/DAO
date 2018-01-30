@@ -11,7 +11,7 @@ import Foundation
 
 
 /// Parent class for all entities.
-open class Entity: Hashable {
+open class RMREntity: Hashable {
     
     /// Hash value for compare entities.
     open var hashValue: Int {
@@ -40,7 +40,7 @@ open class Entity: Hashable {
     ///
     /// - Parameter other: entity compare with.
     /// - Returns: result of comparison.
-    open func equals<T>(_ other: T) -> Bool where T: Entity {
+    open func equals<T>(_ other: T) -> Bool where T: RMREntity {
         return self.entityId == other.entityId
     }
 }
@@ -52,6 +52,6 @@ open class Entity: Hashable {
 ///   - lhs: left entity to compare.
 ///   - rhs: right entity to compare.
 /// - Returns: result of comparison.
-public func ==<T>(lhs: T, rhs: T) -> Bool where T: Entity {
+public func ==<T>(lhs: T, rhs: T) -> Bool where T: RMREntity {
     return lhs.equals(rhs)
 }

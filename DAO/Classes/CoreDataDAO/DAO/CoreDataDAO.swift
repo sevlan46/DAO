@@ -10,7 +10,7 @@ import CoreData
 
 
 /// `DAO` pattern implementation for `CoreData`.
-open class CoreDataDAO<CDModel: NSManagedObject, Model: Entity> : DAO<Model> {
+open class CoreDataDAO<CDModel: NSManagedObject, Model: RMREntity> : DAO<Model> {
 
     // MARK: - Private
     

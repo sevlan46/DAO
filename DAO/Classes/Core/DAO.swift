@@ -10,7 +10,7 @@ import Foundation
 
 
 /// Parent class for DAO pattern implemetation (aka interface).
-open class DAO<Model: Entity> {
+open class DAO<Model: RMREntity> {
     
     // MARK: - Insert/update
     

@@ -13,7 +13,7 @@ import CoreData
 
 /// Parent class for `CoreData` translators. 
 /// Translators fill properties of new/existant entities from entries and other way.
-open class CoreDataTranslator<CDModel: NSManagedObject, Model: Entity> {
+open class CoreDataTranslator<CDModel: NSManagedObject, Model: RMREntity> {
     
     /// Helper property for `CoreDataDAO`.
     open var entryClassName: String {

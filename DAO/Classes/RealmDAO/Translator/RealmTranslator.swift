@@ -11,7 +11,7 @@ import Foundation
 import RealmSwift
 
 
-open class RealmTranslator<Model: Entity, RealmModel: RLMEntry> {
+open class RealmTranslator<Model: RMREntity, RealmModel: RLMEntry> {
     
     public required init() {}
     

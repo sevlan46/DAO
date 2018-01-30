@@ -12,7 +12,7 @@ import Realm
 import RealmSwift
 
 /// `DAO` pattern implementation for `Realm`.
-open class RealmDAO<Model: Entity, RealmModel: RLMEntry>: DAO<Model> {
+open class RealmDAO<Model: RMREntity, RealmModel: RLMEntry>: DAO<Model> {
 
     // MARK: - Private
     
